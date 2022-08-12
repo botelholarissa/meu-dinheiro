@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const Container = createGlobalStyle`
+export const GlobalStyleComponent = createGlobalStyle`
 
     * {
         margin: 0;
@@ -20,8 +20,5 @@ export const Container = createGlobalStyle`
         --logo-blue: #57DBCA;
         --transaction-orange:#E06E00;
     }
-
-
-
 `;
 
