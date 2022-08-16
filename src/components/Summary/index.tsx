@@ -11,21 +11,21 @@ export function Summary() {
                     <h2>Entrada</h2>
                     <img src={incomeImg} alt="Círculo verde sem preenchimento com seta verde para cima." />
                 </header>
-                <strong>R$17.400,00</strong>
+                <strong>{new Intl.NumberFormat('pt-BR',  {style: 'currency', currency: 'BRL'}).format(17600)}</strong>
             </div>
             <div>
                 <header>
                     <h2>Saída</h2>
                     <img src={outcomeImg} alt="Círculo vermelho sem preenchimento com seta vermelha para baixo." />
                 </header>
-                <strong>R$1259,00</strong>
+                <strong>{new Intl.NumberFormat('pt-BR',  {style: 'currency', currency: 'BRL'}).format(1259)}</strong>
             </div>
             <div>
                 <header>
                     <h2>Total</h2>
                     <img src={totalImg} alt="Cifrão branco em fundo branco." />
                 </header>
-                <strong>R$16.141,00</strong>
+                <strong>{new Intl.NumberFormat('pt-BR',  {style: 'currency', currency: 'BRL'}).format(16156)}</strong>
             </div>
         </Container>
     );
