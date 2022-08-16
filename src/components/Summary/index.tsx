@@ -18,7 +18,7 @@ export function Summary() {
                     <h2>Saída</h2>
                     <img src={outcomeImg} alt="Círculo vermelho sem preenchimento com seta vermelha para baixo." />
                 </header>
-                <strong>{new Intl.NumberFormat('pt-BR',  {style: 'currency', currency: 'BRL'}).format(1259)}</strong>
+                <strong>{new Intl.NumberFormat('pt-BR',  {style: 'currency', currency: 'BRL'}).format(-1259)}</strong>
             </div>
             <div>
                 <header>
