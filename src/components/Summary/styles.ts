@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
-    margin-top: -3.5rem;
+    margin-top: -4rem;
 
     div{
         background-color: var(--walter-white);
