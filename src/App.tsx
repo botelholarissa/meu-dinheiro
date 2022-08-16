@@ -1,10 +1,14 @@
-import React from 'react';
+import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
 import { Summary } from './components/Summary';
 import { GlobalStyleComponent } from './styles/global';
 
 export function App() {
   return (
-    <><GlobalStyleComponent></GlobalStyleComponent><Header></Header><Summary></Summary><h1></h1></>
+    <>
+      <GlobalStyleComponent/>
+      <Header/>
+      <Dashboard/>
+    </>
   );
 }
