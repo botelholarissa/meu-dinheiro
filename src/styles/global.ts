@@ -9,6 +9,10 @@ export const GlobalStyleComponent = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
     }
 
+    html {
+        background-color: var(--background-gray);
+    }
+
     :root {
         --green-green: #33CC95;
         --text-green: #29A376;
