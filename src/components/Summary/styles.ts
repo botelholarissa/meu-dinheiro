@@ -13,6 +13,7 @@ export const Container = styled.div`
         font-weight: 600;
         &:last-child{
             background-color: var(--green-green);
+            color: var(--walter-white);
         }
     }
 
