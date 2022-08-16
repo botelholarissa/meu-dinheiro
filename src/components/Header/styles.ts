@@ -17,7 +17,6 @@ export const HeaderContent = styled.header`
         background: var(--transaction-orange);
         padding: 0.6rem 1.25rem;
         border-radius: 0.3rem;
-        font-family: 'Poppins', sans-serif;
         font-weight: 600;
         color: var(--walter-white);
         border: 0;
