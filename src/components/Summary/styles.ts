@@ -9,6 +9,8 @@ export const Container = styled.div`
         background-color: var(--walter-white);
         padding: 2rem;
         border-radius: 0.3rem;
+        font-size: 2rem;
+        font-weight: 600;
         &:last-child{
             background-color: var(--green-green);
         }
@@ -18,6 +20,7 @@ export const Container = styled.div`
         width: 100%;
         display: flex;
         justify-content: space-between;
-        
+        font-size: 1rem;
+        font-weight: 400;
     }
 `
