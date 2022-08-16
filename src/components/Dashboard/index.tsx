@@ -1,9 +1,11 @@
 import { StatementTable } from "../StatementTable";
+import { Summary } from "../Summary";
 import { Container } from "./styles";
 
 export function Dashboard (){
     return (
         <Container>
+            <Summary/>
             <StatementTable/>
         </Container>
     );
