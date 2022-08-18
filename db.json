@@ -1,0 +1,17 @@
+{
+    "transactions": [{ 
+        "id": "", 
+        "title": "Bota bonitona verde", 
+        "amount": -398,
+        "category": "Vestuário",
+        "date": ""
+        },
+        {
+            "id": "",
+            "title": "Camisa fogo nos racistas",
+            "amount": 308,
+            "category": "Vestuário",
+            "date": ""
+        }
+    ]
+}
