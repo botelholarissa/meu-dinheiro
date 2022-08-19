@@ -5,7 +5,12 @@ import closeModalImg from '../../assets/close.svg';
 import incomeModalImg from '../../assets/income.svg';
 import outcomeModalImg from '../../assets/outcome.svg';
 
-export function TransactionModal(){
+interface TransactionModalProps{
+    isOpen: boolean;
+    onRequestClose: ()=> void;
+}
+
+export function TransactionModal({ isOpen, onRequestClose }: TransactionModalProps){
     function submitNewTransaction(event: FormEvent){
         event.preventDefault();
 
@@ -13,8 +18,8 @@ export function TransactionModal(){
 
     return(
         <>
-            <Modal isOpen={true} className="modal-content" overlayClassName="overlay-transaction-modal">
-            <CloseModalButton>
+            <Modal isOpen={isOpen} onRequestClose={onRequestClose} className="modal-content" overlayClassName="overlay-transaction-modal">
+            <CloseModalButton onClick={onRequestClose}>
                 <img src={closeModalImg} alt="Botão de fechar modal" />
             </CloseModalButton>
 
