@@ -21,6 +21,10 @@ export const HeaderContent = styled.header`
         color: var(--walter-white);
         border: 0;
         font-size: 1rem;
+
+        &:hover{
+            filter: brightness(0.9);
+        }
     }
 
     
