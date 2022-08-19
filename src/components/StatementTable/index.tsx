@@ -11,16 +11,13 @@ interface Transaction {
     createdAt: string;
 }
 
+interface StatementTableProps {
+    transactions: Transaction[];
+}
 
-export function StatementTable(){
-    const [ transactions, setTransactions ] = useState<Transaction[]>([]);
 
-    useEffect(() => {
-        api.get('/transactions').then(response => {setTransactions(response.data);
-            console.log(response.data);
-        });
-    }, []);
-
+export function StatementTable({ transactions} : StatementTableProps){
+    
    return (
     <Container>
         <table>
