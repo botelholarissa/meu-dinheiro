@@ -58,12 +58,17 @@ export const TransactionGroup = styled.div`
     width: 100%;
 `;
 
-export const TransactionButton = styled.button`
+
+interface TransactionButtonProps {
+    background: string;
+}
+
+export const TransactionButton = styled.button<TransactionButtonProps>`
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #d7d7d7;
+    border: 2px solid ${(props) => props.background};;
 
     width: 100%;
     padding: 0 1.5rem;
@@ -91,5 +96,9 @@ export const SubmitTransactionButton = styled.button`
 
     color: var(--walter-white);
     font-weight: 600;
+
+    &:hover{
+        filter: brightness(0.9);
+    }
     
 `;
