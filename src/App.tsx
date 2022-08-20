@@ -28,7 +28,7 @@ export function App() {
     <>
       <GlobalStyleComponent/>
       <Header/>
-      <Dashboard transactions={transactions} setTransactions={setTransactions}/>
+      <Dashboard transactions={transactions}/>
     </>
   );
 }

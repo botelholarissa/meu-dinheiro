@@ -15,14 +15,13 @@ interface Transaction {
 
 interface DashboardProps {
     transactions: Transaction[];
-    setTransactions: (transactions: Transaction[]) => void;
 }
 
-export function Dashboard ({ transactions, setTransactions } : DashboardProps){
+export function Dashboard ({ transactions } : DashboardProps){
     
     return (
         <Container>
-            <Summary/>
+            <Summary transactions={transactions}/>
             <StatementTable transactions={transactions}/>
         </Container>
     );
