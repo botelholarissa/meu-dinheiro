@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
+import { TransactionModal } from './components/TransactionModal';
 import { api } from './services/api';
 import { GlobalStyleComponent } from './styles/global';
 
@@ -15,6 +16,16 @@ interface Transaction {
 
 
 export function App() {
+  const [ TransactionModalOpen, setTransactionModalState ] = useState(false);
+
+  function handleCloseModal(){
+    setTransactionModalState(false);
+  }
+
+  function handleOpenModal(){
+    setTransactionModalState(true);
+  }
+
   const [ transactions, setTransactions ] = useState<Transaction[]>([]);
 
     useEffect(() => {
@@ -27,7 +38,8 @@ export function App() {
   return (
     <>
       <GlobalStyleComponent/>
-      <Header/>
+      <TransactionModal isOpen = {TransactionModalOpen} onRequestClose ={handleCloseModal}/>
+      <Header onRequestOpen = {handleOpenModal}/>
       <Dashboard transactions={transactions}/>
     </>
   );

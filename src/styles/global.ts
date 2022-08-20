@@ -13,6 +13,27 @@ export const GlobalStyleComponent = createGlobalStyle`
         background-color: var(--background-gray);
     }
 
+    .modal-content {
+        width: 100%;
+        max-width: 600px;
+        padding: 3rem;
+        position: relative;
+        border-radius: 0.25rem;
+        background: var(--walter-white);
+    }
+
+    .overlay-transaction-modal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     :root {
         --green-green: #33CC95;
         --text-green: #29A376;
