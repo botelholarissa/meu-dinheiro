@@ -1,11 +1,19 @@
-import { FormEvent } from 'react';
+import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
 import { InternalModalContainer, TransactionButton, TransactionGroup, SubmitTransactionButton, CloseModalButton } from './styles';
 import closeModalImg from '../../assets/close.svg';
 import incomeModalImg from '../../assets/income.svg';
 import outcomeModalImg from '../../assets/outcome.svg';
 
-export function TransactionModal(){
+interface TransactionModalProps{
+    isOpen: boolean;
+    onRequestClose: ()=> void;
+}
+
+export function TransactionModal({ isOpen, onRequestClose }: TransactionModalProps){
+
+    const [  transactionType, setTransactionType ] = useState('deposit');
+    
     function submitNewTransaction(event: FormEvent){
         event.preventDefault();
 
@@ -13,8 +21,8 @@ export function TransactionModal(){
 
     return(
         <>
-            <Modal isOpen={true} className="modal-content" overlayClassName="overlay-transaction-modal">
-            <CloseModalButton>
+            <Modal isOpen={isOpen} onRequestClose={onRequestClose} className="modal-content" overlayClassName="overlay-transaction-modal">
+            <CloseModalButton onClick={onRequestClose}>
                 <img src={closeModalImg} alt="Botão de fechar modal" />
             </CloseModalButton>
 
@@ -24,11 +32,11 @@ export function TransactionModal(){
                     <input type="number" name="amount" id="amount" placeholder="Valor" />
 
                     <TransactionGroup>
-                        <TransactionButton className="transaction-type-button">
+                        <TransactionButton className="transaction-type-button" onClick={() => {setTransactionType('deposit')}} background={transactionType == 'deposit' ? '#33CC95': 'buttonface'}>
                             <img src={incomeModalImg} alt="" />
                             <p>Entrada</p>
                         </TransactionButton>
-                        <TransactionButton className="transaction-type-button">
+                        <TransactionButton className="transaction-type-button" onClick={() => {setTransactionType('withdraw')}} background={transactionType == 'withdraw' ? '#e52e4d': 'buttonface'}>
                             <img src={outcomeModalImg} alt="" />
                             <p>Saída</p>
                         </TransactionButton>

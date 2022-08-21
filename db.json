@@ -1,17 +1,27 @@
 {
-    "transactions": [{ 
-        "id": "", 
-        "title": "Bota bonitona verde", 
-        "amount": -398,
+    "transactions": [
+      {
+        "title": "Bota bonitona amarela",
+        "amount": 470,
         "category": "Vestuário",
-        "date": ""
-        },
-        {
-            "id": "",
-            "title": "Camisa fogo nos racistas",
-            "amount": 308,
-            "category": "Vestuário",
-            "date": ""
-        }
+        "transactioType": "withdraw",
+        "id": "UKGxKWf"
+      },
+      {
+        "title": "Bota bonitona verde",
+        "amount": 398,
+        "category": "Vestuário",
+        "transactioType": "withdraw",
+        "date": "2022-03-01 12:00:00",
+        "id": "fKLe2Yd"
+      },
+      {
+        "title": "Camisa fogo nos racistas",
+        "amount": 308,
+        "category": "Vestuário",
+        "transactioType": "deposit",
+        "date": "2022-21-05 13:00:00",
+        "id": "kTUNvFd"
+      }
     ]
-}
+  }
