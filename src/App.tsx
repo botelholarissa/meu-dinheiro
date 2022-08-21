@@ -38,7 +38,7 @@ export function App() {
   return (
     <>
       <GlobalStyleComponent/>
-      <TransactionModal isOpen = {TransactionModalOpen} onRequestClose ={handleCloseModal}/>
+      <TransactionModal isOpen = {TransactionModalOpen} onRequestClose ={handleCloseModal} transactions={transactions} setTransactions={setTransactions}/>
       <Header onRequestOpen = {handleOpenModal}/>
       <Dashboard transactions={transactions}/>
     </>
