@@ -17,7 +17,7 @@ interface Transaction {
 
 export function App() {
   const [ TransactionModalOpen, setTransactionModalState ] = useState(false);
-
+  
   function handleCloseModal(){
     setTransactionModalState(false);
   }
