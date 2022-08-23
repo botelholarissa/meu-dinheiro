@@ -1,28 +1,52 @@
 {
-    "transactions": [
-      {
-        "title": "Bota bonitona amarela",
-        "amount": 470,
-        "category": "Vestuário",
-        "transactionType": "withdraw",
-        "id": "UKGxKWf",
-        "createdAt": "2022-03-01 12:00:00"
-      },
-      {
-        "title": "Bota bonitona verde",
-        "amount": 398,
-        "category": "Vestuário",
-        "transactionType": "withdraw",
-        "createdAt": "2022-03-01 12:00:00",
-        "id": "fKLe2Yd"
-      },
-      {
-        "title": "Camisa fogo nos racistas",
-        "amount": 308,
-        "category": "Vestuário",
-        "transactionType": "deposit",
-        "createdAt": "2022-03-01 12:00:00",
-        "id": "kTUNvFd"
-      }
-    ]
-  }
+  "transactions": [
+    {
+      "title": "Bota bonitona amarela",
+      "amount": 470,
+      "category": "Vestuário",
+      "transactionType": "withdraw",
+      "id": "UKGxKWf",
+      "createdAt": "2022-03-01 12:00:00"
+    },
+    {
+      "title": "Bota bonitona verde",
+      "amount": 398,
+      "category": "Vestuário",
+      "transactionType": "withdraw",
+      "createdAt": "2022-03-01 12:00:00",
+      "id": "fKLe2Yd"
+    },
+    {
+      "title": "Camisa fogo nos racistas",
+      "amount": 308,
+      "category": "Vestuário",
+      "transactionType": "deposit",
+      "createdAt": "2022-03-01 12:00:00",
+      "id": "kTUNvFd"
+    },
+    {
+      "title": "Samambaia ",
+      "category": "Moradia",
+      "amount": 45,
+      "transactionType": "withdraw",
+      "createdAt": "2022-08-23T03:27:09.314Z",
+      "id": "RXQev2O"
+    },
+    {
+      "title": "Salário Agosto 2022",
+      "category": "Salário",
+      "amount": 2125,
+      "transactionType": "deposit",
+      "createdAt": "2022-08-23T03:28:03.327Z",
+      "id": "T-eJ59E"
+    },
+    {
+      "title": "Prateleira Cozinha",
+      "category": "Moradia",
+      "amount": 500,
+      "transactionType": "withdraw",
+      "createdAt": "2022-08-23T03:28:43.183Z",
+      "id": "wmIfuL6"
+    }
+  ]
+}
